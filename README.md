@@ -1,8 +1,8 @@
 # react-shark
 
-React + Express application created from ground-up without using create-react-app
+React + Express application created from ground-up without using _create-react-app_
 
-Run `npm start` to start the application and load `localhost:3000' in browser to view the application.
+Run `npm start` to start the application and load `localhost:3000` in browser to view the application.
 
 TODO:
 
