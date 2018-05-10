@@ -1,0 +1,45 @@
+{
+  "name": "react-shark",
+  "version": "1.0.0",
+  "description": "React application created from ground-up without using create-react-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./index.js",
+    "lint": "eslint . --ext .js, jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishgkwd/react-shark.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "javascript",
+    "es6"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashishgkwd/react-shark/issues"
+  },
+  "homepage": "https://github.com/ashishgkwd/react-shark#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
