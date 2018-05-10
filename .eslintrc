@@ -7,8 +7,12 @@
         "node": true
     },
     "rules": {
+        "react/jsx-indent": 0,
         "react/jsx-filename-extension": 0,
         "react/forbid-prop-types": 0,
-        "indent": [2, 4]
-    }
+        "indent": ["warn", 4]
+    },
+    "plugins": [
+        "react"
+    ]
 }
