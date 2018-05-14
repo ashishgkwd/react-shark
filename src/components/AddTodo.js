@@ -23,10 +23,8 @@ const AddTodo = ({ dispatch }) => {
     return (
         <div>
             <form onSubmit={handleOnClick}>
-                <span className="addtodo-form">
                 <input type="text" id="newTodo" placeholder="Add New Todo " onBlur={onInputBlur} />
                 <input type="submit" value="Add" />
-                </span>
             </form>
         </div>
     );

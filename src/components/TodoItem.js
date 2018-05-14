@@ -13,7 +13,7 @@ const TodoItem = ({ item, onItemComplete }) => {
     return (
         <div
             role="link"
-            className={item.isComplete ? 'complete-todo-listitem' : 'todo-listitem'}
+            className={item.isComplete ? 'complete-todo-listitem' : ''}
             onKeyUp={completeOnKeyUp}
             onClick={completeTodo}
         >{item.name}

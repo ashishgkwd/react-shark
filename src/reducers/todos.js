@@ -5,8 +5,10 @@ let itemId = 0;
 const getNewItem = text => ({ id: itemId++, name: text, isComplete: false });
 
 const markItemComplete = (id, state) => {
-    const item = state.find(x => x.id === id);
-    item.isComplete = true;
+    const newState = [...state];
+    const item = newState.find(x => x.id === id);
+    item.isComplete = !item.isComplete;
+    return newState;
 };
 
 const todos = (state = [], action) => {
@@ -15,8 +17,7 @@ const todos = (state = [], action) => {
             return [...state, getNewItem(action.todoName)];
 
         case constants.MARK_COMPLETE:
-            markItemComplete(action.todoId, state);
-            return [...state];
+            return markItemComplete(action.todoId, state);
 
         default:
             return state;

@@ -5,13 +5,18 @@
 body {
   max-width: 70%;
   margin: 0 auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
 input {
   margin-right: 4px;
+  background-color: white;
 }
- 
+
+li {
+  cursor: pointer;
+}
+
 .main-content {
   margin-top: 10%;
   background-color: gray;
@@ -23,14 +28,7 @@ input {
   flex-direction: column;
 }
 
-.addtodo-form {
-  margin: 4px;
-}
-
-.todo-listitem {
-  cursor: pointer;
-}
-
 .complete-todo-listitem {
+  color: lightgray;
   text-decoration: line-through;
 }

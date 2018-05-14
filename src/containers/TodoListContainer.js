@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import TodoList from '../components/TodoList';
 import { markComplete } from '../actions';
 
-const mapStateToProps = state => ({
-    todoList: state.todos,
-});
+const mapStateToProps = (state) => {
+    console.log('STATE: ', state);
+    return { todoList: state.todos };
+};
 
 const mapDispatchToProps = dispatch => ({
     onItemComplete: id => dispatch(markComplete(id)),
