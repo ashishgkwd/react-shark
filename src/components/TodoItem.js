@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const TodoItem = ({ item, onItemComplete }) => {
     const completeTodo = () => {
-        console.log('complete todo: ', item.id);
         onItemComplete(item.id);
     };
 

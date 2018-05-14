@@ -3,21 +3,25 @@
  */
 import React from 'react';
 import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 
 import './styles.css';
+import TodoApp from './containers/TodoApp';
+import configureStore from './store/configureStore';
 
-import TodoBox from './containers/TodoBox';
-
-if (module.hot) {
-    module.hot.accept();
-}
+const store = configureStore();
 
 const MainApp = () => (
     <div className="main-content">
         <h1>Another Todo</h1>
-        <TodoBox />
+        <TodoApp />
     </div>
 );
 
 // render the app
-render(<MainApp />, document.getElementById('app'));
+render(
+    <Provider store={store}>
+        <MainApp />
+    </Provider>,
+    document.getElementById('app'),
+);

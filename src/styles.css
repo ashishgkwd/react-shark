@@ -8,9 +8,15 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+input {
+  margin-right: 4px;
+}
  
 .main-content {
-  background-color: lightblue;
+  margin-top: 10%;
+  background-color: gray;
+  color: antiquewhite;
+  box-shadow: 0 8px 6px -6px black;
   display: flex;
   align-items: center;
   justify-content: space-around;

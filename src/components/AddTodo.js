@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
-const AddTodo = ({ addNewTodo }) => {
+import { addTodo } from '../actions';
+
+const AddTodo = ({ dispatch }) => {
     let currentItem;
     let input;
 
     const handleOnClick = (event) => {
         event.preventDefault();
-        addNewTodo(currentItem);
+        dispatch(addTodo(currentItem));
         input.value = '';
     };
 
@@ -30,7 +33,7 @@ const AddTodo = ({ addNewTodo }) => {
 };
 
 AddTodo.propTypes = {
-    addNewTodo: PropTypes.func.isRequired,
+    dispatch: PropTypes.func.isRequired,
 };
 
-export default AddTodo;
+export default connect()(AddTodo);
