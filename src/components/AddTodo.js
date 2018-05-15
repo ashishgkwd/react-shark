@@ -10,8 +10,11 @@ const AddTodo = ({ dispatch }) => {
 
     const handleOnClick = (event) => {
         event.preventDefault();
-        dispatch(addTodo(currentItem));
-        input.value = '';
+        if (currentItem) {
+            dispatch(addTodo(currentItem));
+            input.value = '';
+            currentItem = '';
+        }
     };
 
     const onInputBlur = (event) => {
