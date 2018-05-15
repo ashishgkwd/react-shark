@@ -17,6 +17,18 @@ li {
   cursor: pointer;
 }
 
+.filter-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 12px;
+}
+
+.filter-link a {
+  color: white;
+  font-size: smaller;
+}
+
 .main-content {
   margin-top: 10%;
   background-color: gray;
